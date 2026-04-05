@@ -17,11 +17,16 @@
     .contact-card .icon { font-size: 3rem; margin-bottom: 16px; }
     .contact-card a { color: #A78BFA; text-decoration: none; font-size: 1.2rem; font-weight: 600; }
     .contact-card a:hover { text-decoration: underline; }
+    .contact-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    .contact-item { background: #1E1533; border-radius: 16px; padding: 24px; border: 1px solid #2D2145; text-align: center; }
+    .contact-item .icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .contact-item a { color: #A78BFA; text-decoration: none; font-size: 1rem; font-weight: 600; }
     .faq-item { background: #1E1533; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid #2D2145; }
     .faq-item h3 { color: #A78BFA; font-size: 1rem; margin-bottom: 8px; }
     .faq-item p { margin-bottom: 0; }
     .footer { text-align: center; padding: 30px 20px; border-top: 1px solid #2D2145; }
     .footer a { color: #A78BFA; text-decoration: none; }
+    @media (max-width: 500px) { .contact-info { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -31,12 +36,19 @@
   </div>
 
   <div class="content">
-    <div class="contact-card">
-      <div class="icon">&#9993;</div>
-      <p style="margin-bottom: 8px;">Bize e-posta gonderin:</p>
-      <a href="mailto:3haftadaingilizce@gmail.com">3haftadaingilizce@gmail.com</a>
-      <p style="margin-top: 12px; color: #94A3B8; font-size: 0.85rem;">Genellikle 24 saat icinde yanitliyoruz</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="icon">&#9993;</div>
+        <p style="margin-bottom: 8px; color: #94A3B8;">E-posta</p>
+        <a href="mailto:info@hakanhocaking.com">info@hakanhocaking.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="icon">&#128222;</div>
+        <p style="margin-bottom: 8px; color: #94A3B8;">Telefon</p>
+        <a href="tel:+905052991316">+90 505 299 13 16</a>
+      </div>
     </div>
+    <p style="text-align: center; color: #94A3B8; font-size: 0.85rem;">Genellikle 24 saat icinde yanitliyoruz</p>
 
     <h2>Sikca Sorulan Sorular</h2>
 
